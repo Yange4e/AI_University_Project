@@ -86,7 +86,8 @@ def db_query(query, params=(), fetch=False):
         conn = dbpool.get_connection()
         cursor = conn.cursor(dictionary=True)
         cursor.execute(query, params)
-        res = cursor.fetchall() if fetch else None
+        results = cursor.fetchall()
+        res = results if fetch else None
         conn.commit()
         logger.debug(f"✅ Query executed successfully")
         return res
