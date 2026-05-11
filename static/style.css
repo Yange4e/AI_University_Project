@@ -1,0 +1,29 @@
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 15px;
+    color: white;
+}
+
+#chat-box {
+    height: 350px;
+    overflow-y: auto;
+    background: #0f3460;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.user-msg { color: #e94560; font-weight: bold; }
+.bot-msg { color: #00d2ff; font-weight: bold; }
+
+.btn-primary { background-color: #e94560; border: none; }
+.btn-primary:hover { background-color: #c62a48; }
+
+.stat-val { color: #00d2ff; font-size: 1.2em; font-weight: bold; }
